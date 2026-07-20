@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script type="text/javascript" src="/___vscode_livepreview_injected_script"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Navbar Dropdown</title>
+
+<style>
+
+    nav{
+        display:flex;
+    }
+
+    .menu{
+        position:relative;
+        /* cursor:pointer; */
+    }
+
+    .menu p{
+        padding:8px 12px;
+    }
+
+    .sub{
+        display:none;
+        position:absolute;
+        width:180px;
+        
+    }
+
+    .sub p{
+        padding:10px;
+    }
+    .menu:hover .sub{
+        display:block;
+    }
+
+    .menu:hover{
+        color:greenyellow
+    }
+</style>
+
+</head>
+ 
+<body>
+
+<nav>
+
+    <div class="menu">
+        <p>COURSES</p>
+        <div class="sub">
+            <p>HTML</p>
+            <p>CSS</p>
+            <p>React</p>
+            <p>Python</p>
+        </div>
+    </div>
+
+    <div class="menu">
+        <p>TUTORIALS</p>
+        <div class="sub">
+            <p>HTML</p>
+            <p>CSS</p>
+            <p>Python</p>
+            <p>React</p>
+        </div>
+    </div>
+
+    <div class="menu">
+        <p>INTERVIEW PREPARATION</p>
+        <div class="sub">
+            <p>Interview Tips</p>
+            <p>Practice DSA</p>
+            <p>Problem of the Day</p>
+            <p>Mock Interviews</p>
+        </div>
+    </div>
+
+</nav>
+
+</body>
+</html>
